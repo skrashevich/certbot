@@ -27,6 +27,27 @@ logger = logging.getLogger(__name__)
 
 PLUGIN_INTERFACES = [interfaces.Authenticator, interfaces.Installer, interfaces.Plugin]
 """Interfaces that should be listed in `certbot plugins` output"""
+PREFIX_FREE_DISTRIBUTIONS = [
+    "certbot",
+    "certbot-apache",
+    "certbot-dns-cloudflare",
+    "certbot-dns-cloudxns",
+    "certbot-dns-digitalocean",
+    "certbot-dns-dnsimple",
+    "certbot-dns-dnsmadeeasy",
+    "certbot-dns-gehirn",
+    "certbot-dns-google",
+    "certbot-dns-linode",
+    "certbot-dns-luadns",
+    "certbot-dns-nsone",
+    "certbot-dns-ovh",
+    "certbot-dns-rfc2136",
+    "certbot-dns-route53",
+    "certbot-dns-sakuracloud",
+    "certbot-dns-beget",
+    "certbot-nginx",
+]
+"""Distributions for which prefix will be omitted."""
 
 
 class PluginEntryPoint:
